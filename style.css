@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0%;
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+}
+html {
+  font-size: 100%;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: #282c34;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  margin-top: 100px;
+  width: 46em;
+  background-color: #222227;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 1);
+}
+.month {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-top: 10px;
+}
+.month h1 {
+  margin: 0 20px;
+  width: 200px;
+  text-align: center;
+}
+.month i {
+  cursor: pointer;
+  padding: 20px;
+}
+.day {
+  display: flex;
+  flex-wrap: wrap;
+}
+.day div {
+  width: calc(46rem / 7);
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgba(200, 200, 200, 0.6);
+}
+.week-day {
+  display: flex;
+}
+.week-day div {
+  width: calc(46rem / 7);
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  color: rgb(226, 226, 226);
+}
+.day div:not(.week-day):hover {
+  cursor: pointer;
+  border: 1px solid white;
+}
+.event {
+  border: 1px solid#61dafb;
+}
+.listed-events {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  color: #61dafb;
+  padding: 10px 50px;
+}
+.currentMonth {
+  color: rgba(255, 255, 255, 1) !important;
+}
+.event-header {
+  padding-top: 10px;
+  color: white;
+  text-align: center;
+}
+.events {
+  background-color: #19191b;
+}
+.search {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 10px;
+}
+.search h3 {
+  color: white;
+}
+.result {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  color: #61dafb;
+  padding: 10px 50px;
+}
+.search-input {
+  padding: 5px;
+  margin: 10px 0 5px 0;
+}
+.search-result {
+  width: 100%;
+}
+.search-result h3 {
+  text-align: center;
+}
+@media screen and (max-width: 800px) {
+  .container {
+    width: 30em;
+    margin: 20px 0px;
+  }
+  .day div {
+    width: calc(30em / 7);
+    height: 3.5rem;
+  }
+  .month-name {
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .container {
+    width: 20em;
+    margin: 20px 0px;
+  }
+  body {
+    align-items: flex-start;
+    justify-content: center;
+  }
+  .day div {
+    width: calc(20em / 7);
+    height: 3rem;
+  }
+  .week-day div {
+    height: 3rem;
+  }
+  .listed-events {
+    padding: 10px;
+  }
+  .result {
+    padding: 10px;
+  }
+  .month-name {
+    font-size: 20px;
+  }
+}
