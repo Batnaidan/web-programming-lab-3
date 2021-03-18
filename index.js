@@ -23,6 +23,9 @@ const calendar2021 = {
     30: 'Дүн гаргаж дууслаа баярлалаа баяртай',
   },
 };
+
+console.log('FUCK TENGIS');
+
 const monthNames = [
   'January',
   'February',
